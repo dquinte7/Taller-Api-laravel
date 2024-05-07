@@ -1,0 +1,543 @@
+{
+	"info": {
+		"_postman_id": "309b7581-6c9d-414f-a445-fc24a03a1279",
+		"name": "Plants",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21533461"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "36cdea40-b78c-402f-a542-0d36a683a9d0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"trever.kassulke@example.net\",\r\n    \"password\": \"password\",\r\n    \"name\": \"Mrs. Lizeth Hermann\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Plants",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "9ca9c2f7-9bb5-405f-b0b5-4209d38b368d"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|hvCkN60RPwUWzstWwXef3jOcEhQTkHib7UrB4pJH203cb19b",
+						"uuid": "5919c9ce-d70a-4372-b5b4-d007f325cfbb"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/plants",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"plants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "0966f0f2-faf8-47a4-b0c0-e5fa540fcccd"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|hvCkN60RPwUWzstWwXef3jOcEhQTkHib7UrB4pJH203cb19b",
+						"uuid": "ac3b74cd-3a71-4a0b-993b-5f90a42a20eb"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categories",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Plants One",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "5b078b5a-6355-4604-989e-de275ae22fc9"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|hvCkN60RPwUWzstWwXef3jOcEhQTkHib7UrB4pJH203cb19b",
+						"uuid": "8a16a604-af22-4e38-a9c2-9ddee02f4373"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/plants/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"plants",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categrory One",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "5c67cb5c-3754-4739-a47b-d1618e7aa556"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|hvCkN60RPwUWzstWwXef3jOcEhQTkHib7UrB4pJH203cb19b",
+						"uuid": "dc2de07b-7aba-463c-a787-00671f3c4ee7"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categories/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Plant",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "9c803155-67ff-4fc3-88ac-2acc12fa0c17"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|hvCkN60RPwUWzstWwXef3jOcEhQTkHib7UrB4pJH203cb19b",
+						"uuid": "2053683a-ff50-4ac5-8ea0-7bfff76b6140"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Cactus\",\r\n        \"scientific_name\": \"Cactaceae\",\r\n        \"description\": \" Cactaceae, las cactáceas, conocidas como cactus o cactos, es una familia de plantas originarias de América. Sin embargo, hay una excepción, Rhipsalis baccifera, que está extendida en África tropical, Madagascar y Ceilán.\",\r\n        \"image\": \"https://www.venditapianteonline.it/wp-content/uploads/2024/01/Schlumbergera-in-variet-1.jpg\",\r\n        \"color\": \"Green\",\r\n        \"size\": \"large\",\r\n        \"count\": 51,\r\n        \"price\": 31.05,\r\n        \"height\": 44.93,\r\n        \"width\": 78.03\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/plants",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"plants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Category",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "b8ea1115-33fb-4a02-903a-b2fcf9222a0e"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|hvCkN60RPwUWzstWwXef3jOcEhQTkHib7UrB4pJH203cb19b",
+						"uuid": "d9afcdc4-1ce8-4414-a9fe-6554a35ba13e"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Suculentas\",\r\n    \"description\": \"Plantas internas\",\r\n    \"date\": \"2024-05-06\",\r\n    \"status\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categories",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Uplod Plant",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "4426b8fc-bd22-4a95-926c-818842c176ae"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|zQYpWYOf3rponyxPOrTrDSGifcScQIgPSKWieouH033468c7",
+						"uuid": "5cb51d7c-4a97-45cc-930d-1107cfb6fa49"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Suculenta\",\r\n        \"scientific_name\": \"Cactaceaes\",\r\n        \"description\": \" Cactaceae, las cactáceas, conocidas como cactus o cactos, es una familia de plantas originarias de América. Sin embargo, hay una excepción, Rhipsalis baccifera, que está extendida en África tropical, Madagascar y Ceilán.\",\r\n        \"image\": \"https://www.venditapianteonline.it/wp-content/uploads/2024/01/Schlumbergera-in-variet-1.jpg\",\r\n        \"color\": \"Green\",\r\n        \"size\": \"medium\",\r\n        \"count\": 60,\r\n        \"price\": 31.05,\r\n        \"height\": 44.93,\r\n        \"width\": 78.03\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/plants/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"plants",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Uplod Category",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "5e7a3eb2-2bc2-4821-b302-abe99e552576"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|hvCkN60RPwUWzstWwXef3jOcEhQTkHib7UrB4pJH203cb19b",
+						"uuid": "5f675cc6-e347-4479-94e0-723804f0d65c"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Cactus\",\r\n    \"description\": \"plantas externas\",\r\n    \"date\": \"2024-05-04\",\r\n    \"status\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categories/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete  Plant",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "51e73809-f3f4-4f55-bf7e-f2cd39058a1a"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|zQYpWYOf3rponyxPOrTrDSGifcScQIgPSKWieouH033468c7",
+						"uuid": "5a95e716-ccd4-4458-9563-2aace5a0c74d"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/plants/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"plants",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete  Category",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "a86b1483-89c9-4043-9554-7a04e2002b1f"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|hvCkN60RPwUWzstWwXef3jOcEhQTkHib7UrB4pJH203cb19b",
+						"uuid": "51294721-f88e-4163-91d3-242cb7282c9b"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categories/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

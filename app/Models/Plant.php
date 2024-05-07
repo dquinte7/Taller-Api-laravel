@@ -20,4 +20,9 @@ class plant extends Model
         'height',
         'width',
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }

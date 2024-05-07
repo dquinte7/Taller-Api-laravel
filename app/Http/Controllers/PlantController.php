@@ -15,7 +15,7 @@ class PlantController extends Controller
      */
     public function index()
     {
-        return Plant::all();
+        return Plant::with('category')->get();
     }
 
     /**
@@ -32,7 +32,7 @@ class PlantController extends Controller
      */
     public function show(Plant $plant)
     {
-        return response()->json(['plant' => $plant], Response::HTTP_OK);
+        return response()->json($plant->load('category'));
     }
 
     /**

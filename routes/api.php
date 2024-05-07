@@ -15,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::apiResource('/plants', \App\Http\Controllers\PlantController::class)->middleware('auth:sanctum');
+Route::apiResource('/categories', \App\Http\Controllers\CategoryController::class)->middleware('auth:sanctum');
 Route::post('/login', [\App\Http\Controllers\LoginController::class, 'login']);
